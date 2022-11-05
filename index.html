@@ -55,7 +55,10 @@
                     handler(todos) {
                         localStorage.setItem("todo_list", JSON.stringify(todos))
                     },
-                    deep: true
+                    deep: true,
+                    h(newTodo){
+                        console.log(777)
+                    }
                 }
 
             },
